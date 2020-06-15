@@ -4,10 +4,6 @@ public class Editor {
 
     private String content;
 
-    public Editor(String content) {
-        this.content = content;
-    }
-
     public EditorState createState(){
         return new EditorState(content);
     }
@@ -15,6 +11,7 @@ public class Editor {
     public void restore(EditorState state){
         content = state.getContent();
     }
+
     public String getContent() {
         return content;
     }
