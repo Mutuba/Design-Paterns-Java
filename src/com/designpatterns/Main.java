@@ -14,6 +14,8 @@ public class Main {
 //       System.out.println("This is the balance " + bal);
         var editor = new Editor();
         var history = new History();
+        editor.setContent("a");
+        history.push(editor.createState());
     }
 
     public static TaxCalculator getCalculator(){
