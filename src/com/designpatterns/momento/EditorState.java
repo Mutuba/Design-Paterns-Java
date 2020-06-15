@@ -7,6 +7,7 @@ public class EditorState {
         this.content = content;
     }
 
+    // returns the content of EditorState
     public String getContent() {
         return content;
     }
