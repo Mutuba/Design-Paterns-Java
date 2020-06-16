@@ -16,4 +16,8 @@ public class History {
         states.remove(lastState);
         return lastState;
     }
+
+    public List<EditorState> getStates() {
+        return states;
+    }
 }
